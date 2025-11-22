@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juanelos – Una Fresería</title>
+  <link rel="stylesheet" href="inicio.css">
+  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- BOTÓN HAMBURGUESA (solo móvil) -->
+  <button class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- OVERLAY PARA CIERRE AL TOCAR AFUERA -->
+  <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+  <!-- SIDEBAR LATERAL -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="images/logo.png" alt="Juanelos" />
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#">Inicio</a>
+      <a href="#especialidades">Productos</a>
+      <a href="pedidos.html">Realizar Pedido</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </aside>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Juanelos Logo" class="logo-img">
+    </div>
+
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="#especialidades">Productos</a>
+      <a href="#pedido">Realizar Pedido</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">La frescura que te encanta.</h1>
+
+      <p class="hero-text">
+        Fresas, frutas premium, postres y bebidas refrescantes preparados 
+        al instante con calidad superior.  
+        ¡En Juanelos cada visita es una experiencia!
+      </p>
+
+      <a class="btn hero-btn" href="pedidos.html">
+        Realizar Pedido Ahora
+      </a>
+    </div>
+
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- PRODUCTO MÁS VENDIDO -->
+  <section class="top-product">
+    <h2 class="section-title">Producto Más Vendido</h2>
+
+    <div class="top-product-content">
+      <img src="images/MonsterCrack.png" class="top-product-img" alt="Producto más vendido">
+
+      <div class="top-product-text">
+        <h3>❤️ Box Love Premium</h3>
+        <p>
+          La sorpresa ideal para enamorar: fresas en chocolate, crema suave y detalles llenos de ternura. Un regalo dulce, elegante y perfecto para decir “te amo”.
+        </p>
+
+        <a class="btnBoxLove" href="pedidos.html">Ordenar Ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA - REALIZAR PEDIDO AHORA -->
+  <section id="pedido" class="pedido-section">
+    <h2 class="section-title white">¡Haz tu Pedido Ahora!</h2>
+    <p class="cta-text">
+      Escríbenos directamente y disfruta de la frescura de Juanelos en minutos.
+    </p>
+
+    <a class="btn pedido-btn" href="https://wa.me/573001234567" target="_blank">
+      Pedir por WhatsApp
+    </a>
+  </section>
+
+ <!-- ESPECIALIDADES -->
+<section id="especialidades" class="services">
+  <h2 class="section-title">Nuestras Especialidades</h2>
+
+  <p class="section-subtitle">
+    Preparadas al instante con frutas frescas, calidad superior y presentación premium.
+  </p>
+
+  <!-- CARRUSEL MOBILE -->
+  <div class="services-carousel">
+
+    <div class="service-card">
+      <img src="images/pave-oreo.png" class="service-img">
+      <h3>Fresas con Crema</h3>
+      <p>Clásicas, frescas y deliciosas como en ningún otro lugar.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/pave-klim.png" class="service-img">
+      <h3>Ensaladas de Frutas</h3>
+      <p>Combinaciones saludables llenas de color y sabor.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/pave-maracuya.png" class="service-img">
+      <h3>Sodas & Granizados</h3>
+      <p>Bebidas refrescantes con sabores naturales.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/pave-jumbo.png" class="service-img">
+      <h3>Waffles & Postres</h3>
+      <p>Delicias dulces y crocantes para cualquier momento.</p>
+    </div>
+
+  </div>
+
+  <!-- GRID DESKTOP -->
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="images/pave-oreo.png" class="service-img">
+      <h3>Fresas con Crema</h3>
+      <p>Clásicas, frescas y deliciosas como en ningún otro lugar.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/pave-klim.png" class="service-img">
+      <h3>Ensaladas de Frutas</h3>
+      <p>Combinaciones saludables llenas de color y sabor.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/pave-maracuya.png" class="service-img">
+      <h3>Sodas & Granizados</h3>
+      <p>Bebidas refrescantes con sabores naturales.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/pave-jumbo.png" class="service-img">
+      <h3>Waffles & Postres</h3>
+      <p>Delicias dulces y crocantes para cualquier momento.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- GALERÍA -->
+<section class="galeria">
+  <h2 class="section-title">Galería</h2>
+
+  <!-- CARRUSEL MOBILE -->
+  <div class="galeria-carousel">
+    <img src="images/Galeria1.png" alt="">
+    <img src="images/Galeria2.png" alt="">
+    <img src="images/Galeria6.png" alt="">
+    <img src="images/Galeria5.png" alt="">
+  </div>
+
+  <!-- GRID DESKTOP -->
+  <div class="galeria-grid">
+    <img src="images/Galeria1.png" alt="">
+    <img src="images/Galeria2.png" alt="">
+    <img src="images/Galeria6.png" alt="">
+    <img src="images/Galeria5.png" alt="">
+  </div>
+</section>
+
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section class="why-us">
+    <h2 class="section-title white">¿Por Qué Elegir Juanelos?</h2>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <h3>Ingredientes Frescos</h3>
+        <p>Seleccionamos solo fruta de la mejor calidad.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Preparación al Instante</h3>
+        <p>Todo se hace al momento para garantizar frescura.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Sabor Único</h3>
+        <p>Recetas originales que no encontrarás en otro lugar.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Atención Premium</h3>
+        <p>Servicio amable, rápido y dedicado a tu experiencia.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="ubicacion">
+    <h2 class="section-title">Ubicación</h2>
+
+    <p class="section-subtitle">Visítanos en nuestro punto principal:</p>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8355513314498!2d-74.083626!3d4.609710!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e0acfa00000%3A0x123456789abcdef!2sTu%20Ubicacion!5e0!3m2!1ses!2sco!4v1700000000000" 
+        width="100%" height="450" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+ <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Columna 1: Logo y descripción -->
+    <div class="footer-section">
+      <img src="images/logo.png" alt="Logo" class="footer-logo">
+      <p>Disfruta de nuestros productos premium. Calidad y sabor en cada detalle.</p>
+    </div>
+
+    <!-- Columna 2: Navegación -->
+    <div class="footer-section">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#especialidades">Productos</a></li>
+        <li><a href="pedidos.html">Realizar Pedido</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Calle 123, Ciudad</p>
+      <p><i class="fas fa-phone"></i> +57 300 000 0000</p>
+      <p><i class="fas fa-envelope"></i> contacto@lapostre.com</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/tucuenta" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/573000000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Columna 4: Métodos de pago -->
+   <div class="footer-section">
+  <h4>Métodos de Pago</h4>
+
+  <div class="payment-icons">
+    <!-- Tus SVG -->
+    <img src="images/nequiSvg.svg" alt="Nequi" class="pay-svg">
+    <img src="images/bancolombiaSvg.svg" alt="Bancolombia" class="pay-svg">
+  </div>
+</div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Juanelos. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/573001234567" target="_blank" class="whatsapp-btn">
+    <img src="images/wspp.png" alt="WhatsApp">
+  </a>
+
+  <!-- SCRIPT DEL SIDEBAR + CARRUSEL MÓVIL -->
+<script>
+  /* ---------------------------
+     SIDEBAR (abre/cierra + overlay)
+     --------------------------- */
+  (function() {
+    const sidebar = document.getElementById("sidebar");
+    const menuToggle = document.getElementById("menuToggle");
+    const overlay = document.getElementById("sidebarOverlay");
+
+    if (menuToggle) {
+      menuToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuToggle.classList.toggle("active");
+        overlay.classList.toggle("active");
+      });
+    }
+
+    if (overlay) {
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        menuToggle.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    }
+
+    document.querySelectorAll(".sidebar-nav a").forEach(link => {
+      link.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        menuToggle.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    });
+  })();
+
+  /* ---------------------------
+   CARRUSEL MÓVIL (autoplay continuo + swipe)
+   - selectores: .services-carousel, .galeria-carousel
+   - funciona solo en móvil (<=768px)
+   - usa requestAnimationFrame para smooth autoplay en móviles
+   --------------------------- */
+/* CARRUSEL MÓVIL ROBUSTO (autoplay continuo + swipe; reintentos si las imágenes aún no cargan) */
+(function () {
+  const SELECTORS = ".services-carousel, .galeria-carousel";
+  const AUTOPLAY_TIME = 3500;
+
+  let carousels = [];
+
+  function initCarousels() {
+    destroyCarousels();
+
+    document.querySelectorAll(SELECTORS).forEach((carousel) => {
+      const items = Array.from(carousel.children);
+      if (items.length <= 1) return;
+
+      const state = {
+        carousel,
+        items,
+        index: 0,
+        itemWidth: items[0].offsetWidth,
+        dragging: false,
+        startX: 0,
+        scrollStart: 0
+      };
+
+      // ------------------------------------------
+      // AUTOPLAY ESTABLE, SUAVECITO Y SIN DESFASES
+      // ------------------------------------------
+      const autoplayTick = () => {
+        if (state.dragging) return; // si está siendo tocado, no mover aún
+
+        // Recalcula index real basado en scroll cuando no se arrastra
+        const approxIndex = Math.round(carousel.scrollLeft / state.itemWidth);
+        state.index = approxIndex;
+
+        // Avanza al siguiente
+        state.index = (state.index + 1) % items.length;
+
+        carousel.scrollTo({
+          left: state.itemWidth * state.index,
+          behavior: "smooth",
+        });
+      };
+
+      state.autoplay = setInterval(autoplayTick, AUTOPLAY_TIME);
+
+      // ------------------------------------------
+      // DRAG + SWIPE
+      // ------------------------------------------
+      const pointerDown = (e) => {
+        state.dragging = true;
+        state.startX = e.clientX;
+        state.scrollStart = carousel.scrollLeft;
+      };
+
+      const pointerMove = (e) => {
+        if (!state.dragging) return;
+        const dx = e.clientX - state.startX;
+        carousel.scrollLeft = state.scrollStart - dx;
+      };
+
+      const pointerUp = () => {
+        if (!state.dragging) return;
+        state.dragging = false;
+
+        // Ajustar y centrar al item más cercano
+        const moved = carousel.scrollLeft / state.itemWidth;
+        state.index = Math.round(moved);
+
+        if (state.index < 0) state.index = 0;
+        if (state.index >= items.length) state.index = items.length - 1;
+
+        carousel.scrollTo({
+          left: state.index * state.itemWidth,
+          behavior: "smooth",
+        });
+
+        // NO REINICIA EL AUTOPLAY → mantiene el ritmo
+      };
+
+      carousel.addEventListener("pointerdown", pointerDown, { passive: true });
+      window.addEventListener("pointermove", pointerMove, { passive: true });
+      window.addEventListener("pointerup", pointerUp);
+
+      // Guardar estado para limpieza
+      state.destroy = () => {
+        clearInterval(state.autoplay);
+        carousel.removeEventListener("pointerdown", pointerDown);
+        window.removeEventListener("pointermove", pointerMove);
+        window.removeEventListener("pointerup", pointerUp);
+      };
+
+      carousels.push(state);
+    });
+  }
+
+  function destroyCarousels() {
+    carousels.forEach((c) => c.destroy && c.destroy());
+    carousels = [];
+  }
+
+  window.addEventListener("resize", () => {
+    destroyCarousels();
+    setTimeout(initCarousels, 300);
+  });
+
+  document.addEventListener("DOMContentLoaded", initCarousels);
+})();
+
+
+
+
+</script>
+
+
+</body>
+</html>
