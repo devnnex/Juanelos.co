@@ -7,64 +7,54 @@ const DELIVERY_FEE = 5000; // tarifa por defecto de domicilio
 // ---------- Datos de ejemplo ----------
 const products = [
   // ===== TAMAÑOS =====
-  {
-    id: 'original-12oz',
-    category: 'La Original',
-    title: 'La Original 12 oz',
-    price: 17900,
-    desc: 'Incluye 2 salsas.',
-    ingredients: ['Brownie', 'Queso', 'Chocmelos', 'Chócaramo', 'Quipitos', 'Leche condensada', 'Chips de chocolate', 'Mango', 'Oreo', 'Milo', 'Hershey’s', 'Arequipe Alpina', 'Piazza', 'Chokis', 'Minichips', 'Maní', 'Klim', 'Chocolatina Jumbo'],
-    extras: [
-      { name: 'Brownie', price: 3000 },
-      { name: 'Queso', price: 3000 },
-      { name: 'Chocmelos', price: 3000 },
-      { name: 'Chócaramo', price: 3000 },
-      { name: 'Quipitos', price: 3000 },
-      { name: 'Leche condensada', price: 3000 },
-      { name: 'Chips de chocolate', price: 3000 },
-      { name: 'Mango', price: 3000 },
-      { name: 'Oreo', price: 3000 },
-      { name: 'Milo', price: 3000 },
-      { name: 'Hershey’s', price: 3000 },
-      { name: 'Arequipe Alpina', price: 3000 },
-      { name: 'Piazza', price: 3000 },
-      { name: 'Chokis', price: 3000 },
-      { name: 'Minichips', price: 3000 },
-      { name: 'Maní', price: 3000 },
-      { name: 'Klim', price: 3000 },
-      { name: 'Chocolatina Jumbo', price: 3000 }
-    ],
-    image: 'images/original-12oz.png'
-  },
-  {
-    id: 'original-16oz',
-    category: 'La Original',
-    title: 'La Original 16 oz',
-    price: 22900,
-    desc: 'Incluye 2 salsas.',
-    ingredients: ['Brownie', 'Queso', 'Chocmelos', 'Chócaramo', 'Quipitos', 'Leche condensada', 'Chips de chocolate', 'Mango', 'Oreo', 'Milo', 'Hershey’s', 'Arequipe Alpina', 'Piazza', 'Chokis', 'Minichips', 'Maní', 'Klim', 'Chocolatina Jumbo'],
-    extras: [
-      { name: 'Brownie', price: 3000 },
-      { name: 'Queso', price: 3000 },
-      { name: 'Chocmelos', price: 3000 },
-      { name: 'Chócaramo', price: 3000 },
-      { name: 'Quipitos', price: 3000 },
-      { name: 'Leche condensada', price: 3000 },
-      { name: 'Chips de chocolate', price: 3000 },
-      { name: 'Mango', price: 3000 },
-      { name: 'Oreo', price: 3000 },
-      { name: 'Milo', price: 3000 },
-      { name: 'Hershey’s', price: 3000 },
-      { name: 'Arequipe Alpina', price: 3000 },
-      { name: 'Piazza', price: 3000 },
-      { name: 'Chokis', price: 3000 },
-      { name: 'Minichips', price: 3000 },
-      { name: 'Maní', price: 3000 },
-      { name: 'Klim', price: 3000 },
-      { name: 'Chocolatina Jumbo', price: 3000 }
-    ],
-    image: 'images/original-16oz.png'
-  },
+{
+  id: 'original',
+  category: 'La Original',
+  title: 'La Original',
+  price: 17900, // precio base del tamaño más pequeño
+  desc: 'Incluye 2 salsas.',
+  ingredients: [
+    'Brownie', 'Queso', 'Chocmelos', 'Chócaramo', 'Quipitos', 'Leche condensada',
+    'Chips de chocolate', 'Mango', 'Oreo', 'Milo', 'Hershey’s', 'Arequipe Alpina',
+    'Piazza', 'Chokis', 'Minichips', 'Maní', 'Klim', 'Chocolatina Jumbo'
+  ],
+  extras: [
+    { name: 'Brownie', price: 3000 },
+    { name: 'Queso', price: 3000 },
+    { name: 'Chocmelos', price: 3000 },
+    { name: 'Chócaramo', price: 3000 },
+    { name: 'Quipitos', price: 3000 },
+    { name: 'Leche condensada', price: 3000 },
+    { name: 'Chips de chocolate', price: 3000 },
+    { name: 'Mango', price: 3000 },
+    { name: 'Oreo', price: 3000 },
+    { name: 'Milo', price: 3000 },
+    { name: 'Hershey’s', price: 3000 },
+    { name: 'Arequipe Alpina', price: 3000 },
+    { name: 'Piazza', price: 3000 },
+    { name: 'Chokis', price: 3000 },
+    { name: 'Minichips', price: 3000 },
+    { name: 'Maní', price: 3000 },
+    { name: 'Klim', price: 3000 },
+    { name: 'Chocolatina Jumbo', price: 3000 }
+  ],
+  image: 'images/original-12oz.png', // imagen principal, puede ser del tamaño base
+  sizes: [
+    {
+      id: 'original-12oz',
+      label: '12 oz',
+      price: 17900,
+      image: 'images/original-12oz.png'
+    },
+    {
+      id: 'original-16oz',
+      label: '16 oz',
+      price: 22900,
+      image: 'images/original-16oz.png'
+    }
+  ]
+}
+,
   {
   id: 'poderosa',
   category: 'La Poderosa',
